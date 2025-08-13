@@ -1,0 +1,267 @@
+/*.color1 { #042608 };
+.color2 { #2a5c0b };
+.color3 { #808f12 };
+.color4 { #faedd9 };
+.color5 { #ea2a15 };*/
+
+/* incluindo googlefonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}*/
+
+/* incluindo googlefonts no corpo total da página*/
+body {
+    
+    font-family: "Montserrat", sans-serif;
+    background-color: #111;
+    color: #ddd;
+    font-size: 1.0em; 
+    line-height: 1.6; /*espaçamento entre linhas*/
+    padding-top: 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #000000; 
+}
+/*https://dontpad.com/idw2025*/
+
+/* comentário */
+#cabecalho{
+    background-color: #7ef18b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    position: fixed; 
+    top: 0;          
+    width: 100%;   
+    height: 180px;  
+    z-index: 1000; 
+}
+
+#logo img{
+    max-width: 25vh;
+    height: auto;
+    border-radius: 50%;
+    border: 5px solid #000000;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    font-size: 1.2em;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+#menu a:hover {
+    color: #fff;
+}
+
+#home, #sobreMim, #portifolio{
+    scroll-margin-top: 150px;
+    min-height: 100vh;
+    padding: 40px;
+}
+
+#home{
+    background-image: url('../imagens/matrix-7178709_1280.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    padding: 40px;
+    min-height: 100vh;
+}
+
+#home p{
+    font-family: "Roboto", sans-serif;
+    width: 80%;
+    max-width: 1200px;
+    padding: 30px;
+    border-radius: 7px;
+    text-align: justify;
+    background-color: #042608;
+    color: #fff;
+    opacity: 75%;
+}
+
+#sobreMim{
+    background-color: #ffffff;
+    color: #333;
+}
+#sobreMim h1{
+    margin-bottom: 30px;
+
+}
+#sobreMim #sobreMimContainer{
+    display: flex;
+    align-items: top;
+    justify-content: center;
+    gap: 30px;
+}
+#sobreMim #sobreMimContainer img{
+    width: 35vh;
+}
+#sobreMim #sobreMimContainer p{
+    text-align: justify;
+}
+#portifolio{
+    background-color: #d5e777;
+    color: #000000;
+}
+#portifolios{
+    display: flex;
+    flex-wrap: wrap;/*permite que os elementos quebrem a linha*/
+    justify-content: space-around;
+}
+#portifolios article{
+    margin-top: 20px;
+    border: 1px solid #333;
+    border-radius: 7px;
+    padding: 10px;
+    width: 20%;
+    box-shadow: 0 2px 4px #333;
+}
+#portifolios article img{
+    width: 100%;
+    border-radius: 2px;
+}
+#portifolios article h2{
+    font-size: 1.2em;
+}
+#portifolios article p{
+    text-align: justify;
+    margin-bottom: 5px;
+}
+#portifolios article a{
+    color: #333;
+    font-weight: bold;
+    font-size: 1em;
+}
+#portifolios article a:hover{
+    color: #da766b;
+}
+
+#contato{
+    width: 100%;
+    background-color: #fff;
+    scroll-margin-top: 150px;
+    min-height: 100vh;
+    padding-top: 40px;
+    
+}
+#contato .container{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+
+}
+#contato .container h1{
+    margin-bottom: 30px;
+    color: #333;
+}
+#contato .formulario{
+    margin-top: 20px;
+    margin-left: 30px;
+    width: 650px;
+}
+
+#contato .formulario p{
+    text-align: justify;
+    color: #333;
+    margin-bottom: 20px;
+}
+#contato .maisContato h2{
+    font-size: 1.05em;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: #111;
+}
+#contato .maisContato .detalhe{
+    font-size: 1.0em;
+    margin: 0;
+    color: #111;
+}
+
+#contato .formulario form{
+  /*  display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;*/
+}
+#contato .formulario input{
+    margin-right: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    height: 45px;
+    padding: 5px;
+    font-size: 1.05em;
+
+    border: 1px solid #333;
+}
+#contato .formulario button{
+    margin-top: 20px;
+    width: 150px;
+    height: 40px;
+    font-size: 1.05em;
+    font-weight: bold;
+    font-family: "Roboto";
+    background-color: #042608;
+    color: #fff;
+    border-radius: 10px;
+}
+#contato .formulario input:focus{
+    border-color: 5px solid #99655f;
+}
+
+#contato .container .mapa{
+    margin-right: 30px;
+}
+#footer {
+    background-color: #62ea75;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    height: 150px;  
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#footerMenu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+#footerMenu ul a{
+    font-family: "Montserrat", sans-serif;
+    color: #ddd;
+    font-size: 1.0em; 
+}
+#footerMenu a:hover {
+    color: #d5e777;
+}
+
+#footer #redesSociais img{
+    width: 35px;
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 7px;
+    margin-left: 5px;
+    padding: 5px;
+}
